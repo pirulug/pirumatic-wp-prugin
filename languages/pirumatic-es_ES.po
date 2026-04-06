@@ -1,0 +1,196 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Pirumatic 3.6\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-03-21 17:50+0000\n"
+"PO-Revision-Date: 2026-04-05 21:30-0500\n"
+"Last-Translator: Pirulug <https://github.com/pirulug/>\n"
+"Language-Team: Spanish\n"
+"Language: es_ES\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Antigravity AI\n"
+
+#: pirumatic.php:288
+msgid " or higher, and has been deactivated! "
+msgstr " o superior, ¡y ha sido desactivado! "
+
+#: inc/settings-display.php:19
+msgid "Advanced"
+msgstr "Avanzado"
+
+#: inc/settings-reset.php:38
+msgid "and"
+msgstr "y"
+
+#: pirumatic.php:252
+msgid "and try again."
+msgstr "e inténtalo de nuevo."
+
+#: inc/settings-reset.php:40
+msgid "Apply code"
+msgstr "Aplicar código"
+
+#: pirumatic.php:304 pirumatic.php:310
+msgid "Cheatin&rsquo; huh?"
+msgstr "¿Intentando hacer trampas, eh?"
+
+#: inc/settings-display.php:146
+msgid "Check out more WordPress resources from this developer:"
+msgstr "Echa un vistazo a más recursos de WordPress de este desarrollador:"
+
+#: pirumatic.php:216
+msgid "Click here to rate and review this plugin on WordPress.org"
+msgstr "Haz clic aquí para calificar y dejar una reseña de este plugin en WordPress.org"
+
+#: inc/settings-register.php:31
+msgid "Command Line"
+msgstr "Línea de Comandos"
+
+#: inc/resources-enqueue.php:87
+msgid "Confirm Reset"
+msgstr "Confirmar Restablecimiento"
+
+#: inc/settings-register.php:30
+msgid "Copy to Clipboard"
+msgstr "Copiar al Portapapeles"
+
+#: inc/settings-callbacks.php:105 lib/highlight/themes.php:162
+msgid "Default"
+msgstr "Por defecto"
+
+#: inc/settings-reset.php:15
+msgid "Default options restored."
+msgstr "Opciones por defecto restauradas."
+
+#: inc/settings-callbacks.php:79
+msgid "Disable (default)"
+msgstr "Desactivar (por defecto)"
+
+#: inc/settings-register.php:16
+msgid "Disable the Pirumatic block stylesheet on the frontend"
+msgstr "Desactivar la hoja de estilos del bloque Pirumatic en el frontend"
+
+#: inc/settings-reset.php:115
+msgid "Dismiss"
+msgstr "Descartar"
+
+#: inc/settings-callbacks.php:280
+msgid "Donate via PayPal, credit card, or cryptocurrency"
+msgstr "Donar vía PayPal, tarjeta de crédito o criptomoneda"
+
+#: inc/settings-register.php:27 inc/settings-register.php:28 
+#: inc/settings-register.php:29 inc/settings-register.php:30 
+#: inc/settings-register.php:31 inc/settings-callbacks.php:83
+msgid "Enable"
+msgstr "Activar"
+
+#: inc/settings-display.php:15
+msgid "General"
+msgstr "General"
+
+#: pirumatic.php:211
+msgid "Homepage"
+msgstr "Página de inicio"
+
+#: pirumatic.php:242
+msgid "Like Pirumatic? Give it a"
+msgstr "¿Te gusta Pirumatic? Danos una"
+
+#: inc/settings-register.php:32 inc/settings-register.php:49
+msgid "Limit to Posts and Pages"
+msgstr "Limitar a Entradas y Páginas"
+
+#: inc/settings-register.php:27
+msgid "Line Highlight"
+msgstr "Resaltado de Línea"
+
+#: inc/settings-register.php:28
+msgid "Line Numbers"
+msgstr "Números de Línea"
+
+#: inc/settings-reset.php:19
+msgid "No changes made to options."
+msgstr "No se han realizado cambios en las opciones."
+
+#: inc/resources-enqueue.php:90
+msgid "No, abort mission."
+msgstr "No, abortar misión."
+
+#: inc/settings-callbacks.php:65
+msgid "None (Disable)"
+msgstr "Ninguno (Desactivar)"
+
+#: inc/settings-display.php:18 inc/settings-callbacks.php:61
+msgid "Plain Flavor"
+msgstr "Sabor Simple"
+
+#: pirumatic.php:258 pirumatic.php:283
+msgid "Please return to the"
+msgstr "Por favor, vuelve al"
+
+#: pirumatic.php:210
+msgid "Plugin Homepage"
+msgstr "Página del Plugin"
+
+#: inc/settings-register.php:26
+msgid "Prism theme"
+msgstr "Tema de Prism"
+
+#: pirumatic.php:217
+msgid "Rate this plugin"
+msgstr "Califica este plugin"
+
+#: pirumatic.php:287
+msgid "requires WordPress "
+msgstr "requiere WordPress "
+
+#: inc/settings-register.php:17
+msgid "Restore default options"
+msgstr "Restaurar opciones por defecto"
+
+#: inc/resources-enqueue.php:88
+msgid "Restore default options?"
+msgstr "¿Restaurar opciones por defecto?"
+
+#: inc/settings-callbacks.php:263
+msgid "Restore default plugin options"
+msgstr "Restaurar opciones por defecto del plugin"
+
+#: pirumatic.php:196
+msgid "Settings"
+msgstr "Ajustes"
+
+#: inc/settings-callbacks.php:13 inc/settings-callbacks.php:25
+msgid "Settings for syntax highlighting via"
+msgstr "Ajustes para el resaltado de sintaxis mediante"
+
+#: inc/settings-register.php:29
+msgid "Show Language"
+msgstr "Mostrar Lenguaje"
+
+#: inc/settings-register.php:18 inc/settings-callbacks.php:271
+msgid "Show support with a 5-star rating &raquo;"
+msgstr "Muestra tu apoyo con una calificación de 5 estrellas &raquo;"
+
+#: inc/settings-register.php:19 inc/settings-callbacks.php:281
+msgid "Show support with a small donation&nbsp;&raquo;"
+msgstr "Muestra tu apoyo con una pequeña donación&nbsp;&raquo;"
+
+#: pirumatic.php:262
+msgid "Warning:"
+msgstr "Advertencia:"
+
+#: pirumatic.php:264 pirumatic.php:290
+msgid "WP Admin Area"
+msgstr "Área de Administración de WP"
+
+#: inc/resources-enqueue.php:89
+msgid "Yes, make it so."
+msgstr "Sí, hazlo."
+
+#: pirumatic.php:246
+msgid "★★★★★ rating&nbsp;&raquo;"
+msgstr "calificación de ★★★★★&nbsp;&raquo;"
