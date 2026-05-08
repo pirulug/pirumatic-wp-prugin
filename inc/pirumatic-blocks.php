@@ -30,8 +30,18 @@ function pirumatic_register_block_assets() {
 		
 		$style_url  = plugins_url('/css/styles-blocks.css', dirname(__FILE__));
 		
-		$script_dep = ['wp-i18n', 'wp-element', 'wp-blocks', 'wp-components', 'wp-editor', 'wp-hooks'];
-		$style_dep  = [];
+		$script_dep = array('wp-i18n', 'wp-element', 'wp-blocks', 'wp-components', 'wp-editor', 'wp-hooks');
+		$style_dep  = array();
+		
+		if (isset($pirumatic_options_general['library'])) {
+			if ($pirumatic_options_general['library'] === 'prism') {
+				$script_dep[] = 'pirumatic-prism';
+				$style_dep[]  = 'pirumatic-prism';
+			} elseif ($pirumatic_options_general['library'] === 'highlight') {
+				$script_dep[] = 'pirumatic-highlight';
+				$style_dep[]  = 'pirumatic-highlight';
+			}
+		}
 		
 		wp_register_script('pirumatic-blocks', $script_url, $script_dep);
 		wp_register_style ('pirumatic-blocks', $style_url,  $style_dep);

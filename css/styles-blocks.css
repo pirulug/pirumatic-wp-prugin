@@ -1,10 +1,21 @@
 /* Pirumatic - Block Styles */
 
-.block-editor .block-editor-plain-text.wp-block-pirumatic-blocks[style] {
-	padding: 20px; line-height: 22px; font-size: 14px; font-family: Menlo, Consolas, Monaco, monospace; 
-	white-space: pre; resize: vertical !important; overflow-x: auto !important; overflow-y: hidden !important; 
+.wp-block-pirumatic-blocks {
+	margin-bottom: 20px;
+}
+
+.block-editor .block-editor-plain-text.wp-block-pirumatic-blocks,
+.wp-block-pirumatic-blocks pre {
+	padding: 20px !important; 
+	line-height: 1.5; 
+	font-size: 14px; 
+	font-family: Menlo, Consolas, Monaco, monospace; 
+	white-space: pre; 
+	resize: vertical; 
+	overflow-x: auto; 
+	overflow-y: hidden; 
 	-webkit-hyphens: none; -moz-hyphens: none; -ms-hyphens: none; hyphens: none;
 	-moz-tab-size: 4; -o-tab-size: 4; tab-size: 4;
 	-ms-word-break: normal; word-break: normal;
 	-webkit-overflow-scrolling: touch;
-	}
+}

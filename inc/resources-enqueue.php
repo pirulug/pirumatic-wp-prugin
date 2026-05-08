@@ -50,8 +50,6 @@ function pirumatic_enqueue_settings() {
 	
 	if ($screen_id === 'settings_page_pirumatic') {
 		
-		wp_enqueue_style('pirumatic-font-icons', PIRUMATIC_URL .'css/styles-font-icons.css', array(), PIRUMATIC_VERSION);
-		
 		wp_enqueue_style('pirumatic-settings', PIRUMATIC_URL .'css/styles-settings.css', array(), PIRUMATIC_VERSION);
 		
 		wp_enqueue_style('wp-jquery-ui-dialog');
@@ -105,7 +103,7 @@ function pirumatic_prism_enqueue() {
 	
 	$languages = array_filter($languages);
 	
-	if (!empty($languages)) {
+	if (!empty($languages) || is_admin()) {
 		
 		$theme = (isset($pirumatic_options_prism['prism_theme'])) ? $pirumatic_options_prism['prism_theme'] : 'default';
 		
@@ -179,9 +177,21 @@ function pirumatic_prism_enqueue() {
 				?>
 				
 				<script type="text/javascript">
+					(function() {
+						if (!window.wp || !wp.data || !wp.data.subscribe) return;
+						var timer;
+						wp.data.subscribe(function() {
+							clearTimeout(timer);
+							timer = setTimeout(function() {
+								if (window.Prism) {
+									Prism.highlightAll();
+								}
+							}, 500);
+						});
+					})();
 					document.onreadystatechange = function () {
 					    if (document.readyState == 'complete') {
-					        Prism.highlightAll();
+					        if (window.Prism) Prism.highlightAll();
 					    }
 					}
 				</script>
@@ -209,7 +219,7 @@ function pirumatic_highlight_enqueue() {
 	
 	$languages = array_filter($languages);
 	
-	if (!empty($languages) || $always_load) {
+	if (!empty($languages) || $always_load || is_admin()) {
 		
 		$theme = (isset($pirumatic_options_highlight['highlight_theme'])) ? $pirumatic_options_highlight['highlight_theme'] : 'default';
 		
@@ -234,10 +244,26 @@ function pirumatic_highlight_enqueue() {
 				?>
 				
 				<script type="text/javascript">
+					(function() {
+						if (!window.wp || !wp.data || !wp.data.subscribe) return;
+						var timer;
+						wp.data.subscribe(function() {
+							clearTimeout(timer);
+							timer = setTimeout(function() {
+								if (window.hljs) {
+									jQuery('pre > code').each(function() {
+										if (!this.classList.contains('hljs')) {
+											hljs.highlightBlock(this);
+										}
+									});
+								}
+							}, 500);
+						});
+					})();
 					document.onreadystatechange = function () {
 					    if (document.readyState == 'complete') {
 					        jQuery('pre > code').each(function() {
-								hljs.highlightBlock(this);
+								if (window.hljs) hljs.highlightBlock(this);
 							});
 					    }
 					}

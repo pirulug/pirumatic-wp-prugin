@@ -1,7 +1,7 @@
 <?php
 /*
 		Plugin Name: Pirumatic
-		Plugin URI: https://github.com/pirulug/piru-pirumatic
+		Plugin URI: https://github.com/pirulug/pirumatic-wp-prugin
 		Description: Potente y ligero plugin para el resaltado de sintaxis de código en WordPress, con soporte integrado para Prism.js, Highlight.js y Plain Flavor.
 		Tags: code, snippets, syntax, highlight, language
 		Author: Pirulug
@@ -164,7 +164,7 @@ if (!class_exists('Pirumatic')) {
 			if (!defined('PIRUMATIC_AUTHOR'))
 				define('PIRUMATIC_AUTHOR', 'Pirulug');
 			if (!defined('PIRUMATIC_HOME'))
-				define('PIRUMATIC_HOME', 'https://github.com/pirulug/piru-pirumatic/');
+				define('PIRUMATIC_HOME', 'https://github.com/pirulug/pirumatic-wp-prugin');
 			if (!defined('PIRUMATIC_URL'))
 				define('PIRUMATIC_URL', plugin_dir_url(__FILE__));
 			if (!defined('PIRUMATIC_DIR'))
@@ -207,24 +207,11 @@ if (!class_exists('Pirumatic')) {
 
 			if ($file == PIRUMATIC_FILE) {
 
-				$home_href  = 'https://perishablepress.com/pirumatic/';
+				$home_href  = 'https://github.com/pirulug/pirumatic-wp-prugin';
 				$home_title = esc_attr__('Plugin Homepage', 'pirumatic');
 				$home_text  = esc_html__('Homepage', 'pirumatic');
 
 				$links[] = '<a target="_blank" rel="noopener noreferrer" href="' . $home_href . '" title="' . $home_title . '">' . $home_text . '</a>';
-
-				$rate_href  = 'https://wordpress.org/support/plugin/' . PIRUMATIC_SLUG . '/reviews/?rate=5#new-post';
-				$rate_title = esc_attr__('Click here to rate and review this plugin on WordPress.org', 'pirumatic');
-				$rate_text  = esc_html__('Rate this plugin', 'pirumatic') . '&nbsp;&raquo;';
-
-				$links[] = '<a target="_blank" rel="noopener noreferrer" href="' . $rate_href . '" title="' . $rate_title . '">' . $rate_text . '</a>';
-
-				$pro_href  = 'https://plugin-planet.com/pirumatic-pro/';
-				$pro_title = esc_attr__('Get Pirumatic Pro!', 'pirumatic');
-				$pro_text  = esc_html__('Go&nbsp;Pro', 'pirumatic');
-				$pro_style = 'padding:1px 5px;color:#eee;background:#333;border-radius:1px;';
-
-				// $links[]    = '<a target="_blank" rel="noopener noreferrer" href="'. $pro_href .'" title="'. $pro_title .'" style="'. $pro_style .'">'. $pro_text .'</a>';
 
 			}
 
